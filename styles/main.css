@@ -2,21 +2,31 @@
 
 html {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/First_United_Methodist_Church_of_Saline_Michigan.JPG");
-    background-size: 100rem;
-    background-size: 100rem;
+    background-size: cover;
 }
 
 p,a,h1,h2,h3,h4,h5,h6,li {
     font-family: Open Sans;
 }
 
+#logo {
+    height: 12%;
+    width: 5%;
+    top: 0;
+    position: absolute;
+    left: 1%;
+    z-index: 1;
+}
+
 nav {
     position: absolute;
-    left: 0;
+    left: 30%;
     top: 0;
-    width: 100%;
+    width: 70%;
     background-color: #d51e18;
-    padding-bottom: 2%;
+    border-radius: 0 0 0 10px;
+    padding-bottom: 1%;
+    text-align: center;
 
 }
 
@@ -36,6 +46,7 @@ nav ul.navbar li a {
 
 nav ul.navbar li a {
     margin-right: 2%;
+    font-size: 1.3rem;
 }
 
 nav ul.navbar li a:hover {
@@ -43,8 +54,21 @@ nav ul.navbar li a:hover {
     text-decoration: underline;
 }
 
+#greeting {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    top: 400px;
+    width: 60%;
+    background-color: #d51e18;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    padding: 10px;
+
+}
+
 #worship-info {
-    background-color: #f2f2f2;
     width: 20%;
     position: relative;
     padding: 10px;
@@ -54,9 +78,57 @@ nav ul.navbar li a:hover {
 
 #worship-info .header {
     background-color: #d51e18;
+    border-radius: 10px 10px 0 0;
     text-align: center;
     padding: 10px;
     color: #fff;
+}
+
+#worship-info .content {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Animations */
+
+
+.moveIn {
+    animation: 1s moveIn;
+}
+
+@keyframes moveIn {
+    from {
+        transform: translateX(-1200px)
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.moveInLeft {
+    animation: 1s moveInLeft;
+}
+
+@keyframes moveInLeft {
+    from {
+        transform: translateX(1200px)
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1770px) {
+    #logo {
+        height: 15%;
+        width: 5%;
+    }
 }
 
 @media (max-device-width: 414px ) {
