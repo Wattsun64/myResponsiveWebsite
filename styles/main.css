@@ -2,7 +2,7 @@
 
 html {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/First_United_Methodist_Church_of_Saline_Michigan.JPG");
-    background-size: cover;
+    background-size: 100%;
 }
 
 p,a,h1,h2,h3,h4,h5,h6,li {
@@ -59,7 +59,7 @@ nav ul.navbar li a:hover {
     position: absolute;
     left: 0;
     color: #fff;
-    top: 400px;
+    top: 900px;
     width: 60%;
     background-color: #d51e18;
     border-radius: 0 10px 10px 0;
@@ -72,7 +72,8 @@ nav ul.navbar li a:hover {
     width: 20%;
     position: relative;
     padding: 10px;
-    top: 100px;
+    top: 150px;
+    right: 4%;
     float: right;
 }
 
@@ -80,6 +81,7 @@ nav ul.navbar li a:hover {
     background-color: #d51e18;
     border-radius: 10px 10px 0 0;
     text-align: center;
+    font-size: 1.3rem;
     padding: 10px;
     color: #fff;
 }
@@ -88,6 +90,49 @@ nav ul.navbar li a:hover {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 0 0 10px 10px;
+}
+
+#worship-info .content ul {
+    list-style-type: none;
+}
+
+#worship-info .content ul li {
+    border: 1px solid #000;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    position: relative;
+    top: 1200px;
+    left: 0;
+    padding: 10px;
+}
+
+.container .heading-container {
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.container .heading-container h2 {
+    font-size: 1.7rem;
+
+}
+.container .main-content {
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+
+.container .main-content p {
+    font-size: 1.1rem;
 }
 
 /* Animations */
@@ -121,6 +166,19 @@ nav ul.navbar li a:hover {
     }
 }
 
+.moveInTop {
+    animation: 1s moveInTop;
+}
+
+@keyframes moveInTop {
+    from {
+        transform: translateY(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
 
 /* Media Queries */
 
