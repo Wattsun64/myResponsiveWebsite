@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/First_United_Methodist_Church_of_Saline_Michigan.JPG");
+    background-size: 100rem;
+    background-size: 100rem;
+}
+
+p,a,h1,h2,h3,h4,h5,h6,li {
+    font-family: Open Sans;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #d51e18;
+    padding-bottom: 2%;
+
+}
+
+nav ul.navbar {
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+
+}
+
+nav ul.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    padding-left: 2%;
+}
+
+nav ul.navbar li a {
+    margin-right: 2%;
+}
+
+nav ul.navbar li a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+#worship-info {
+    background-color: #f2f2f2;
+    width: 20%;
+    position: relative;
+    padding: 10px;
+    top: 100px;
+    float: right;
+}
+
+#worship-info .header {
+    background-color: #d51e18;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+@media (max-device-width: 414px ) {
+
+    html {
+        background-color: #fff;
+        background-image: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #worship-info {
+        width: 90%;
+    }
+}
